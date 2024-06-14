@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Poppins';
+  font-size: 62.5%;
+
+  --brand-color: #EF5F4C;
+
+  --bg-color: #FFFFFF;
+  --surface-color: #F5F5F5;
+  --skeleton-color: #d9d9d9;
+  --shape-transparency: rgba(255,255,255,56%);
+
+  --txt-color-primary: #313131;
+  --txt-color-secondary: #6c6c6c;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--txt-color-primary);
+  background-color: var(--bg-color);
+  max-width: 1280px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txt-color-secondary);
+  transition: 0.3s;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: var(--brand-color);
+}
+
+img, li {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 20px;
+}
+
+header h1 {
+  color: var(--brand-color);
+  font-size: 2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav img:nth-child(1)  {
+  height: 24px;
+}
+
+header nav h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--txt-color-secondary);
+}
+
+header nav img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+}
+
+section #perfil {
+  max-width: 592px;
+  display: flex;
+  gap: 32px;
+
+}
+
+section #perfil img {
+  height: 176px;
+  width: 176px;
+  border-radius: 50%;
+}
+
+section #perfil #about {
+  display: flex;
+  flex-direction: column;
+}
+
+section #perfil #about h1 {
+  font-size: 3.2rem;
+  margin-bottom: 8px;
+}
+
+section #perfil #about p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 170%;
+}
+
+section ul{
+  width: 280px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+section ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+section ul li span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--txt-color-secondary);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 24px 32px;
+}
+
+main img {
+  height: clamp(150px, 20vw, 286px);
+  width: clamp(150px, 20vw, 286px);
+}
+
+footer {
+  display: flex;
+  padding: 32px 25.5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--txt-color-secondary);
+  gap: 16px;
+}
+
+footer :nth-child(2){
+  margin-left: auto;
+}
